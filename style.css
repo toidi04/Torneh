@@ -190,6 +190,19 @@ h2 {
 .service-card:hover .overlay {
     opacity: 1;
 }
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.service-card {
+    flex: 1 1 250px; /* حداقل 250px، بزرگ شدن اتوماتیک */
+    max-width: 300px;
+}
+
+
 
 /* Responsive */
 @media(min-width: 600px) {
@@ -201,6 +214,17 @@ h2 {
 @media(min-width: 992px) {
     .services-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        max-width: 100%;
     }
 }
 
