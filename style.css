@@ -285,6 +285,7 @@ h2 {
     display: none;
     flex-direction: column;
     padding: 20px 0;
+	z-index: 2;
 }
 
 .nav-links li {
